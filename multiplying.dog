@@ -1,0 +1,8 @@
+bark "Please enter 2 numbers:\n"
+take
+drop dish1
+take
+drop dish2
+dish1 fetch dish2
+bark "The answer is "
+give

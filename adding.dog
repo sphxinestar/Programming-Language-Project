@@ -1,0 +1,4 @@
+bark "Please enter two numbers:\n"
+2 take
+bark "The answer is "
+give

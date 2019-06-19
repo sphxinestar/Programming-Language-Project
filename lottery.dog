@@ -1,0 +1,55 @@
+fetch 38
+drop plate1
+
+label loop
+	pickup plate1
+	drop dish1
+	fetch dish1
+	drop floor
+	pickup dish1
+	eat 1
+	drop plate1
+plate1 jump loop
+
+pickup dish1
+pickup plate1
+eat
+
+fetch 6
+drop plate1
+
+bark "The first area numbers are: "
+label loop2
+	pickup floor
+	give
+	bark " "
+	pickup plate1
+	eat 1 
+	drop plate1
+plate1 jump loop2
+
+pickup plate1
+pickup dish1
+eat
+
+bark "\nThe second area numbers are: "
+clear floor
+fetch 1
+drop floor
+fetch 2
+drop floor
+fetch 3
+drop floor
+fetch 4
+drop floor
+fetch 5
+drop floor
+fetch 6
+drop floor
+fetch 7
+drop floor
+fetch 8
+drop floor
+
+pickup floor
+show
